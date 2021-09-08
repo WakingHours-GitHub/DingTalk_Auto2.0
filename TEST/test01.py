@@ -4,7 +4,8 @@ import time
 import os
 
 # 定义全局变量:
-root_path = os.path.abspath('.') + '\\picture\\'
+# root_path = os.path.abspath('..') + '\\Picture\\'
+root_path = "E:\\HP\\Desktop\\Dingtalk2.0\\Picture\\"
 errorFlag = 0 # 标记出现了[我知道了]
 
 # 点击x号, 关闭界面
@@ -189,7 +190,7 @@ if __name__ == "__main__":
     该自动程序将会开始执行
     ''') # 返回OK
     print(root_path)
-    # pyautogui.hotkey('winleft', 'd') # 快捷键,返回桌面
+    pyautogui.hotkey('winleft', 'd') # 快捷键,返回桌面
 
-    # main_program()
-    sign_in()
+    main_program()
+    # sign_in()
